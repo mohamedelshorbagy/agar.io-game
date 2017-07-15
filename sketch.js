@@ -45,6 +45,8 @@ var score = 0;
 
 // Start of Setup Function 
 function setup() {
+  
+  createP('White Blob is Moving Twoards Your hand Direction');
 
 
 createCanvas(600 , 600);
