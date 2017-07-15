@@ -47,6 +47,7 @@ var score = 0;
 function setup() {
   
   createP('White Blob is Moving Twoards Your Hand or Mouse Direction');
+  createP('Score will Finish when you get to 20 !!');
 
 
 createCanvas(600 , 600);
@@ -66,8 +67,8 @@ blob = new Blob(0 , 0 , blobSize,255);
 
 for(var i = 0 ; i < 20 ; i++) {
 
-  var randX = random(-width , width*2);
-  var randY = random(-height , height*2);
+  var randX = random(-width*2 , width*2);
+  var randY = random(-height*2 , height*2);
 
   food[i] = new Blob(randX , randY , foodSize,color(random(255) , 100 , 255));
 
