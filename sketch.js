@@ -65,7 +65,7 @@ blob = new Blob(0 , 0 , blobSize,255);
 for(var i = 0 ; i < 500 ; i++) {
 
   var randX = random(-width*2 , width*2);
-  var randY = random(-width*2 , width*2);
+  var randY = random(-height*2 , height*2);
 
   food[i] = new Blob(randX , randY , foodSize,color(random(255) , 100 , 255));
 
@@ -112,6 +112,7 @@ translate(-blob.pos.x ,-blob.pos.y);
 
 // To Add 100 Food if it food length array equals to 1 
 if(food.length == 1) {
+  createP('لا جدع يلا *بصوت خالد الصاوي*');
   for(var i = 0 ; i < 100 ; i++) {
     
   var randX2 = random(-width*2 , width*2);
