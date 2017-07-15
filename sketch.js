@@ -50,7 +50,7 @@ function setup() {
   createP('Score will Finish when you get to 20 !!');
 
 
-createCanvas(600 , 600);
+createCanvas(500 , 500);
 colorMode(HSB);
 
 // Realtion Between Blob and Food Size ===> blobSize / 4 ===> foodSize
@@ -67,8 +67,8 @@ blob = new Blob(0 , 0 , blobSize,255);
 
 for(var i = 0 ; i < 20 ; i++) {
 
-  var randX = random(-width*2 , width*2);
-  var randY = random(-height*2 , height*2);
+  var randX = random(width);
+  var randY = random(height);
 
   food[i] = new Blob(randX , randY , foodSize,color(random(255) , 100 , 255));
 
