@@ -62,7 +62,7 @@ blob = new Blob(0 , 0 , blobSize,255);
 
 // Making Foods ==> Put Blob Object in Food Array 
 
-for(var i = 0 ; i < 500 ; i++) {
+for(var i = 0 ; i < 150 ; i++) {
 
   var randX = random(-width*2 , width*2);
   var randY = random(-height*2 , height*2);
