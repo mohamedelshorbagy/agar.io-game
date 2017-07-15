@@ -116,6 +116,9 @@ translate(-blob.pos.x ,-blob.pos.y);
 // To Add 100 Food if it food length array equals to 1 
 if(food.length == 1) {
   createP('لا جدع يلا *بصوت خالد الصاوي*');
+  var pees = document.getElementsByTagName('p');
+  pees[2].style.fontSize = "28px";
+  
   for(var i = 0 ; i < 100 ; i++) {
     
   var randX2 = random(-width*2 , width*2);
